@@ -41,3 +41,28 @@ a:hover{
 .search i{
     padding:5px 20px;
 }
+.heading{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top:65px;
+    align-items:center;
+}
+.right{
+    width: 440px;
+    height: 440px;
+    background-image: url('food.jpg');
+    background-size:cover;
+    border-radius: 400px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.right::before{
+    width: 430px;
+    height: 430px;
+    border:2px solid white;
+    content: '';
+    position: absolute;
+    border-radius: 430px;
+    padding:10px;
+}
