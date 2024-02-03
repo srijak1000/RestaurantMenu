@@ -5,7 +5,7 @@
 body{
     width: 99%;
     height: 97%;
-    background-image: url('Background.png');
+    background-image: url('../Background.png');
     background-size:cover;
 }
 .top{
@@ -50,7 +50,7 @@ a:hover{
 .right{
     width: 440px;
     height: 440px;
-    background-image: url('food.jpg');
+    background-image: url('../food.jpg');
     background-size:cover;
     border-radius: 400px;
     display: flex;
@@ -115,10 +115,10 @@ a:hover{
     margin:0px 20px;
 }
 #food1{
-    background-image: url('food1.png');
+    background-image: url('../food1.png');
 }
 #food2{
-    background-image: url('food.jpg');
+    background-image: url('../food.jpg');
 }
 .menu{
     display: flex;
