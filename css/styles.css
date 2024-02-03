@@ -16,3 +16,28 @@ body{
     align-items:center;
     padding:0px 40px;
 }
+.logo{
+    font-size: 30px;
+    color:orange;
+}
+.nav{
+    position: relative;
+    left:-180px;
+}
+a{
+    padding:5px 15px;
+    color:orange;
+    font-size: 20px;
+    text-decoration:none;
+}
+a:hover{
+    color:white;
+    text-decoration: underline;
+    text-underline-position:under;
+}
+.search{
+    font-size: 25px;
+}
+.search i{
+    padding:5px 20px;
+}
