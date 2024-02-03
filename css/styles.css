@@ -107,3 +107,20 @@ a:hover{
 .SocialMedia i:hover {
     color:orange;
 }
+#food1,#food2{
+    background-size:cover;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    margin:0px 20px;
+}
+#food1{
+    background-image: url('food1.png');
+}
+#food2{
+    background-image: url('food.jpg');
+}
+.menu{
+    display: flex;
+    margin:0px 100px;
+}
