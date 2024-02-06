@@ -6,13 +6,13 @@
 body {
     font-family: "National 2 Condensed";
     font-style: normal;
-    background-color: black;
+    background-color: rgb(217, 177, 83);
     color: #fff;
     font-weight: 700;
     font-size: 15px;
     letter-spacing: .5px;
-    /* text-transform: uppercase; */
     bottom: 7%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
 }
 
 nav {
@@ -62,6 +62,38 @@ nav input {
     margin-left: -28px;
     color: black;
     font-size: 20px;
+}
+
+.container {
+    overflow: hidden;
+}
+
+.left {
+    float: left;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+.right {
+    float: right;
+    margin-right: 100px;
+    margin-top: 50px;
+}
+
+/* Adjust the size, padding, and margin for the input and select */
+.input input,
+.input select {
+    width: 200px; /* Set the desired width */
+    padding: 8px; /* Adjust the padding as needed */
+    margin-right: 10px; /* Add margin to the right for separation */
+}
+
+.fa-magnifying-glass {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    /* Add any additional styles for the magnifying glass icon as needed */
 }
 
 .main {
@@ -197,19 +229,26 @@ nav input {
     text-align: center;
     padding: 11px;
     transition: 0.5s ease;
-
-
+    overflow: hidden; /* Add this to hide overflowing content */
+    box-sizing: border-box; /* Include padding in the total width and height */
 }
 
 .customer img {
     width: 33%;
     border-radius: 50%;
+    margin-bottom: 10px; /* Add margin to create space between the image and text */
 }
 
 .customer i {
     font-size: 22px;
     color: rgba(253, 20, 20, 0.654);
     margin-top: 11px;
+}
+
+.customer p {
+    overflow: visible; /* Show entire content, allow it to overflow */
+    white-space: normal; /* Allow text to wrap to multiple lines */
+    margin: 0; /* Remove default margin to avoid extra space */
 }
 
 .head {

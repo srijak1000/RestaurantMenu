@@ -3,7 +3,7 @@ const foodItems = [
     { name: 'Pancakes and Tea', price: 59, image: "fds (2).jpg" },
     { name: 'Chicken Patty Burger', price: 159, image: "fds (3).jpg" },
     { name: 'Caramel Cheese Cake', price: 189, image: "fds (4).jpg" },
-    { name: 'Indian Thali', price: 299, image: "fds (5).jpg" },
+    { name: 'Indian Thali', price: 319, image: "fds (5).jpg" },
     { name: 'Crispy Chilli Babycorn', price: 129, image: "fds (6).jpg" }
 ];
 
@@ -31,27 +31,22 @@ function renderFoodItems(items) {
     foodContainer.appendChild(cardContainer);
 }
 
-function applyFilters() {
+function applySort() {
     const sortOption = document.getElementById("sortOptions").value;
-    const searchKeyword = document.getElementById("searchInput").value.toLowerCase();
 
-    let filteredItems = [...foodItems];
+    let sortedItems = [...foodItems];
 
     if (sortOption === "lowToHigh") {
-        filteredItems.sort((a, b) => a.price - b.price);
+        sortedItems.sort((a, b) => a.price - b.price);
     } else if (sortOption === "highToLow") {
-        filteredItems.sort((a, b) => b.price - a.price);
+        sortedItems.sort((a, b) => b.price - a.price);
     }
 
-    if (searchKeyword) {
-        filteredItems = filteredItems.filter(item => item.name.toLowerCase().includes(searchKeyword));
-    }
-
-    renderFoodItems(filteredItems);
+    renderFoodItems(sortedItems);
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-    applyFilters();
+    renderFoodItems(foodItems);
 });
 
 function myFun() {
@@ -79,7 +74,19 @@ function myFun() {
     console.log(searchVal);
 }
 
+function handleSearch(event) {
+    if (event.key === 'Enter') {
+        const searchKeyword = document.getElementById("searchInput").value.toLowerCase();
 
+        let searchedItems = [...foodItems];
+
+        if (searchKeyword) {
+            searchedItems = searchedItems.filter(item => item.name.toLowerCase().includes(searchKeyword));
+        }
+
+        renderFoodItems(searchedItems);
+    }
+}
 
 function nav() {
     let nav = document.querySelector(".nav");
