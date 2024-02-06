@@ -1,3 +1,40 @@
+const foodItems = [
+    { name: 'Shimla Chicken Biryani', price: 229, image: "fds (1).jpg" },
+    { name: 'Pancakes and Tea', price: 59, image: "fds (2).jpg" },
+    { name: 'Chicken Patty Burger', price: 159, image: "fds (3).jpg" },
+    { name: 'Caramel Cheese Cake', price: 189, image: "fds (4).jpg" },
+    { name: 'Indian Thali', price: 299, image: "fds (5).jpg" },
+    { name: 'Crispy Chilli Babycorn', price: 129, image: "fds (6).jpg" }
+];
+
+function renderFoodItems() {
+    const foodContainer = document.getElementById("foodContainer");
+    foodContainer.innerHTML = '';
+
+    const cardContainer = document.createElement('div');
+    cardContainer.classList.add('crd');
+
+    foodItems.forEach(item => {
+        const card = document.createElement('div');
+        card.classList.add('card');
+
+        card.innerHTML = `
+            <img src="${item.image}" alt="">
+            <h2>${item.name}</h2>
+            <p>₹${item.price}</p>
+            <button>Order Now</button>
+        `;
+
+        cardContainer.appendChild(card);
+    });
+
+    foodContainer.appendChild(cardContainer);
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+    renderFoodItems();
+});
+
 function myFun() {
     let searchVal = document.getElementById("inp").value.toUpperCase();
     let table = document.getElementsByTagName("table")
@@ -28,7 +65,11 @@ function myFun() {
 
 function nav() {
     let nav = document.querySelector(".nav");
-    nav.style.display = "block"
+    if (nav.style.display === "none" || nav.style.display === "") {
+        nav.style.display = "block";
+    } else {
+        nav.style.display = "none";
+    }
     let login = document.querySelector(".login");
     login.style.display = "none";
 
@@ -36,11 +77,13 @@ function nav() {
 
 function login() {
     let login = document.querySelector(".login");
-    login.style.display = "block";
-
+    if (login.style.display === "none" || login.style.display === "") {
+        login.style.display = "block";
+    } else {
+        login.style.display = "none";
+    }
     let nav = document.querySelector(".nav");
     nav.style.display = "none"
-
 }
 
 

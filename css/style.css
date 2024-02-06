@@ -4,9 +4,15 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: "National 2 Condensed";
+    font-style: normal;
     background-color: black;
     color: #fff;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: .5px;
+    /* text-transform: uppercase; */
+    bottom: 7%;
 }
 
 nav {
@@ -20,7 +26,7 @@ nav {
 
 .logo h1 {
     font-size: 37px;
-    color: rgb(255, 106, 0);
+    color: rgba(253, 20, 20, 0.654);
     margin-top: -2px;
 }
 
@@ -38,7 +44,7 @@ nav {
 }
 
 .icon i:hover {
-    color: rgb(255, 98, 0);
+    color: rgba(253, 20, 20, 0.654);
     cursor: pointer;
 }
 
@@ -86,7 +92,7 @@ nav input {
     margin-top: 24px;
     border: none;
     outline: none;
-    background-color: rgb(255, 119, 0);
+    background-color: rgba(253, 20, 20, 0.654);
     color: white;
     border-radius: 2px;
     font-size: 22px;
@@ -96,7 +102,8 @@ nav input {
 
 .crd {
     display: flex;
-    /* justify-content: center; */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: center;
     margin-left: 115px;
     color: black;
 }
@@ -108,8 +115,8 @@ nav input {
     padding: 11px;
     color: black;
     margin-inline: 11px;
-    margin-top: 84px;
-
+    margin-top: 20px; /* Adjust the margin for better spacing */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
 .card img {
@@ -125,16 +132,17 @@ nav input {
 }
 
 .card button {
-    margin-top: 25px;
+    margin-top: 15px; /* Adjust the margin for better spacing */
     border: none;
     outline: none;
-    background-color: rgb(255, 119, 0);
+    background-color: rgba(253, 20, 20, 0.654);
     color: white;
     border-radius: 2px;
     font-size: 22px;
     width: 140px;
     height: 38px;
 }
+
 
 .blog {
     width: 300px;
@@ -160,7 +168,7 @@ nav input {
     top: 32px;
     width: 160px;
     padding: 10px;
-    background-color: rgb(255, 106, 0);
+    background-color: rgba(253, 20, 20, 0.654);
     color: white;
     font-size: 20px;
     border-radius: 2px;
@@ -200,19 +208,24 @@ nav input {
 
 .customer i {
     font-size: 22px;
-    color: rgb(255, 132, 0);
+    color: rgba(253, 20, 20, 0.654);
     margin-top: 11px;
 }
 
-.head h1 {
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+}
+
+.head h1 {
     font-size: 44px;
     margin-top: 53px;
-    margin-left: 22px;
 }
 
 .head span {
-    color: rgb(255, 119, 0);
+    color: rgba(253, 20, 20, 0.654);
 }
 
 .btn {
@@ -228,7 +241,7 @@ nav input {
     color: white;
     font-size: 20px;
     margin-inline: 11px;
-    background-color: rgb(255, 111, 0);
+    background-color: rgba(253, 20, 20, 0.654);
 }
 
 .footer {
@@ -280,7 +293,7 @@ nav input {
     height: 35px;
     border: none;
     outline: none;
-    background-color: rgb(255, 111, 0);
+    background-color: rgba(253, 20, 20, 0.654);
     color: white;
     border-radius: 2px;
     font-size: 18px;
@@ -310,7 +323,7 @@ nav input {
 
 .nav p:hover {
     background-color: #f1efef;
-    color: rgb(255, 111, 0);
+    color: rgba(253, 20, 20, 0.654);
     cursor: pointer;
 
 }
