@@ -7,14 +7,14 @@ const foodItems = [
     { name: 'Crispy Chilli Babycorn', price: 129, image: "fds (6).jpg" }
 ];
 
-function renderFoodItems() {
+function renderFoodItems(items) {
     const foodContainer = document.getElementById("foodContainer");
     foodContainer.innerHTML = '';
 
     const cardContainer = document.createElement('div');
     cardContainer.classList.add('crd');
 
-    foodItems.forEach(item => {
+    items.forEach(item => {
         const card = document.createElement('div');
         card.classList.add('card');
 
@@ -31,13 +31,31 @@ function renderFoodItems() {
     foodContainer.appendChild(cardContainer);
 }
 
+function applyFilters() {
+    const sortOption = document.getElementById("sortOptions").value;
+    const searchKeyword = document.getElementById("searchInput").value.toLowerCase();
+
+    let filteredItems = [...foodItems];
+
+    if (sortOption === "lowToHigh") {
+        filteredItems.sort((a, b) => a.price - b.price);
+    } else if (sortOption === "highToLow") {
+        filteredItems.sort((a, b) => b.price - a.price);
+    }
+
+    if (searchKeyword) {
+        filteredItems = filteredItems.filter(item => item.name.toLowerCase().includes(searchKeyword));
+    }
+
+    renderFoodItems(filteredItems);
+}
+
 document.addEventListener("DOMContentLoaded", function () {
-    renderFoodItems();
+    applyFilters();
 });
 
 function myFun() {
     let searchVal = document.getElementById("inp").value.toUpperCase();
-    let table = document.getElementsByTagName("table")
     let tr = document.getElementsByTagName("tr");
 
     let front = document.querySelector(".main")
