@@ -1,29 +1,34 @@
-*{
+* {
     margin: 0%;
     padding: 0%;
 }
-body{
+
+body {
     font-family: 'Roboto', sans-serif;
     background-color: black;
-   color: #fff;
+    color: #fff;
 }
-nav{
+
+nav {
     display: flex;
     justify-content: space-between;
     background-color: black;
     color: white;
     padding: 33px;
-    box-shadow: 0px 1px 5px 0px  rgb(252, 252, 252);
+    box-shadow: 0px 1px 5px 0px rgb(252, 252, 252);
 }
-.logo h1{
+
+.logo h1 {
     font-size: 37px;
     color: rgb(255, 106, 0);
     margin-top: -2px;
 }
-.icon{
+
+.icon {
     margin-left: -11px;
 }
-.icon i{
+
+.icon i {
     font-size: 22px;
     margin-inline: 8px;
     background-color: #fff;
@@ -31,11 +36,13 @@ nav{
     padding: 9px;
     border-radius: 2px;
 }
-.icon i:hover{
+
+.icon i:hover {
     color: rgb(255, 98, 0);
     cursor: pointer;
 }
-nav input{
+
+nav input {
     width: 600px;
     padding: 11px;
     height: 20px;
@@ -44,32 +51,38 @@ nav input{
     font-size: 18px;
     border-radius: 2px;
 }
-.input i{
+
+.input i {
     margin-left: -28px;
     color: black;
     font-size: 20px;
 }
 
-.main{
+.main {
     display: flex;
     justify-content: space-around;
 }
-.main img{
+
+.main img {
     width: 33%;
     margin-top: 33px;
 }
-.main .text{
+
+.main .text {
     width: 500px;
     margin-top: 62px;
 }
-.text h1{
+
+.text h1 {
     font-size: 66px;
 }
-.text p{
+
+.text p {
     color: #f6f5f5;
     margin-top: 22px;
 }
-.text button{
+
+.text button {
     margin-top: 24px;
     border: none;
     outline: none;
@@ -80,12 +93,14 @@ nav input{
     width: 160px;
     height: 40px;
 }
-.crd{
+
+.crd {
     display: flex;
     /* justify-content: center; */
     margin-left: 115px;
     color: black;
 }
+
 .crd .card {
     width: 300px;
     background-color: #fff;
@@ -96,18 +111,20 @@ nav input{
     margin-top: 84px;
 
 }
-.card img{
+
+.card img {
     width: 100%;
 }
-.card h2{
+
+.card h2 {
     margin-top: 12px;
 }
 
-.card p{
+.card p {
     margin-top: 12px;
 }
 
-.card button{
+.card button {
     margin-top: 25px;
     border: none;
     outline: none;
@@ -119,7 +136,7 @@ nav input{
     height: 38px;
 }
 
-.blog{
+.blog {
     width: 300px;
     height: 370px;
     background-color: #fff;
@@ -129,13 +146,16 @@ nav input{
     margin-inline: 11px;
     margin-top: 84px;
 }
-.blog h2{
+
+.blog h2 {
     margin-top: 12px;
 }
-.blog p{
+
+.blog p {
     margin-top: 12px;
 }
-.blog a{
+
+.blog a {
     position: relative;
     top: 32px;
     width: 160px;
@@ -145,10 +165,12 @@ nav input{
     font-size: 20px;
     border-radius: 2px;
 }
-.blog img{
+
+.blog img {
     width: 100%;
 }
-.review{
+
+.review {
     position: relative;
     display: flex;
     overflow: hidden;
@@ -157,40 +179,47 @@ nav input{
     height: 400px;
     margin-top: 63px;
 }
-.review .customer{
+
+.review .customer {
     position: absolute;
-     width: 100%;
-     height: 70%;
+    width: 100%;
+    height: 70%;
     background-color: #fff;
     color: black;
     text-align: center;
     padding: 11px;
     transition: 0.5s ease;
-     
+
 
 }
-.customer img{
+
+.customer img {
     width: 33%;
     border-radius: 50%;
 }
-.customer i{
+
+.customer i {
     font-size: 22px;
     color: rgb(255, 132, 0);
     margin-top: 11px;
 }
-.head h1{
+
+.head h1 {
     text-align: center;
     font-size: 44px;
     margin-top: 53px;
     margin-left: 22px;
 }
-.head span{
+
+.head span {
     color: rgb(255, 119, 0);
 }
-.btn{
+
+.btn {
     text-align: center;
 }
-.btn button{
+
+.btn button {
     width: 140px;
     height: 38px;
     border: none;
@@ -202,24 +231,26 @@ nav input{
     background-color: rgb(255, 111, 0);
 }
 
-.footer{
+.footer {
     display: flex;
     justify-content: space-around;
     background-color: #fff;
     padding: 55px;
     margin-top: 77px;
-    
+
 }
-.footer .txt{
+
+.footer .txt {
     color: black;
 }
-.txt p{
+
+.txt p {
     margin-top: 12px;
 }
 
 /* Login */
 
-.login{
+.login {
     display: none;
     position: absolute;
     margin-left: 80%;
@@ -230,10 +261,12 @@ nav input{
     border-radius: 4px;
     margin-top: 6px;
 }
-.login h2{
+
+.login h2 {
     color: black;
 }
-.login input{
+
+.login input {
     border: none;
     border-bottom: 2px solid black;
     width: 160px;
@@ -241,7 +274,8 @@ nav input{
     padding: 8px;
     margin-top: 13px;
 }
-.login button{
+
+.login button {
     width: 140px;
     height: 35px;
     border: none;
@@ -252,9 +286,10 @@ nav input{
     font-size: 18px;
     margin-top: 22px;
 }
+
 /* nav */
 
-.nav{
+.nav {
     display: none;
     position: absolute;
     margin-left: 82%;
@@ -262,18 +297,20 @@ nav input{
     padding: 22px;
     background-color: #fff;
     border-radius: 4px;
-    margin-top: 6px;   
+    margin-top: 6px;
 }
-.nav P{
+
+.nav P {
     width: 110px;
     color: black;
     margin-left: 20%;
     padding: 11px;
     border-radius: 4px;
 }
-.nav p:hover{
+
+.nav p:hover {
     background-color: #f1efef;
     color: rgb(255, 111, 0);
     cursor: pointer;
-    
+
 }
