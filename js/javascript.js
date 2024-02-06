@@ -3,7 +3,7 @@ const foodItems = [
     { name: 'Pancakes and Tea', price: 59, image: "fds (2).jpg" },
     { name: 'Chicken Patty Burger', price: 159, image: "fds (3).jpg" },
     { name: 'Caramel Cheese Cake', price: 189, image: "fds (4).jpg" },
-    { name: 'Indian Thali', price: 319, image: "fds (5).jpg" },
+    { name: 'Indian Platter', price: 319, image: "fds (5).jpg" },
     { name: 'Crispy Chilli Babycorn', price: 129, image: "fds (6).jpg" }
 ];
 
@@ -86,6 +86,22 @@ function handleSearch(event) {
 
         renderFoodItems(searchedItems);
     }
+}
+
+function handleSearchClick() {
+    performSearch();
+}
+
+function performSearch() {
+    const searchKeyword = document.getElementById("searchInput").value.toLowerCase();
+
+    let searchedItems = [...foodItems];
+
+    if (searchKeyword) {
+        searchedItems = searchedItems.filter(item => item.name.toLowerCase().includes(searchKeyword));
+    }
+
+    renderFoodItems(searchedItems);
 }
 
 function nav() {
